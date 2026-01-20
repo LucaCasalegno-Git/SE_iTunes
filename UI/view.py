@@ -41,7 +41,7 @@ class View:
         self.lista_visualizzazione_1 = ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=True)
 
         # Riga 2
-        self.dd_album = ft.Dropdown(label="Album", width=200, on_change=self.controller.get_selected_album)
+        self.dd_album = ft.Dropdown(label="Album", width=200, on_change=self.controller.get_selected_album, expand=True)
         self.pulsante_analisi_comp = ft.ElevatedButton(text="Analisi Componente",
                                                  on_click=self.controller.handle_analisi_comp)
         row2 = ft.Row([
